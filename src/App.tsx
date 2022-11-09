@@ -75,8 +75,8 @@ function App() {
   }, [array]);
 
   return (
-    <div className="text-red-400">
-      <div>
+    <div className="flex h-screen justify-center items-center">
+      <div className="">
         <div>
           <button
             className="m-1 px-3 py-3"
