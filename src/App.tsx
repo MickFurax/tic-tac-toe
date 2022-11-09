@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./App.css";
+import o from "./assets/o.svg";
+import x from "./assets/x.svg";
+import black from "./assets/black.svg";
 
 type caseIndex = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 1;
@@ -76,7 +79,7 @@ function App() {
       <div>
         <div>
           <button
-            className="px-5 py-3"
+            className="m-1 px-3 py-3"
             onClick={() => {
               if (case1 == 0) {
                 setCase1(add);
@@ -84,10 +87,14 @@ function App() {
               }
             }}
           >
-            {case1}
+            {case1 == 0 && (
+              <img src={black} alt="empty" className="opacity-0" />
+            )}
+            {case1 == 1 && <img src={o} alt="o" />}
+            {case1 == 5 && <img src={x} alt="x" />}
           </button>
           <button
-            className="px-5 py-3"
+            className="m-1 px-3 py-3"
             onClick={() => {
               if (case2 == 0) {
                 setCase2(add);
@@ -95,10 +102,14 @@ function App() {
               }
             }}
           >
-            {case2}
+            {case2 == 0 && (
+              <img src={black} alt="empty" className="opacity-0" />
+            )}
+            {case2 == 1 && <img src={o} alt="o" />}
+            {case2 == 5 && <img src={x} alt="x" />}
           </button>
           <button
-            className="px-5 py-3"
+            className="m-1 px-3 py-3"
             onClick={() => {
               if (case3 == 0) {
                 setCase3(add);
@@ -106,12 +117,16 @@ function App() {
               }
             }}
           >
-            {case3}
+            {case3 == 0 && (
+              <img src={black} alt="empty" className="opacity-0" />
+            )}
+            {case3 == 1 && <img src={o} alt="o" />}
+            {case3 == 5 && <img src={x} alt="x" />}
           </button>
         </div>
         <div>
           <button
-            className="px-5 py-3"
+            className="m-1 px-3 py-3"
             onClick={() => {
               if (case4 == 0) {
                 setCase4(add);
@@ -119,10 +134,14 @@ function App() {
               }
             }}
           >
-            {case4}
+            {case4 == 0 && (
+              <img src={black} alt="empty" className="opacity-0" />
+            )}
+            {case4 == 1 && <img src={o} alt="o" />}
+            {case4 == 5 && <img src={x} alt="x" />}
           </button>
           <button
-            className="px-5 py-3"
+            className="m-1 px-3 py-3"
             onClick={() => {
               if (case5 == 0) {
                 setCase5(add);
@@ -130,10 +149,14 @@ function App() {
               }
             }}
           >
-            {case5}
+            {case5 == 0 && (
+              <img src={black} alt="empty" className="opacity-0" />
+            )}
+            {case5 == 1 && <img src={o} alt="o" />}
+            {case5 == 5 && <img src={x} alt="x" />}
           </button>
           <button
-            className="px-5 py-3"
+            className="m-1 px-3 py-3"
             onClick={() => {
               if (case6 == 0) {
                 setCase6(add);
@@ -141,12 +164,16 @@ function App() {
               }
             }}
           >
-            {case6}
+            {case6 == 0 && (
+              <img src={black} alt="empty" className="opacity-0" />
+            )}
+            {case6 == 1 && <img src={o} alt="o" />}
+            {case6 == 5 && <img src={x} alt="x" />}
           </button>
         </div>
         <div>
           <button
-            className="px-5 py-3"
+            className="m-1 px-3 py-3"
             onClick={() => {
               if (case7 == 0) {
                 setCase7(add);
@@ -154,10 +181,14 @@ function App() {
               }
             }}
           >
-            {case7}
+            {case7 == 0 && (
+              <img src={black} alt="empty" className="opacity-0" />
+            )}
+            {case7 == 1 && <img src={o} alt="o" />}
+            {case7 == 5 && <img src={x} alt="x" />}
           </button>
           <button
-            className="px-5 py-3"
+            className="m-1 px-3 py-3"
             onClick={() => {
               if (case8 == 0) {
                 setCase8(add);
@@ -165,10 +196,14 @@ function App() {
               }
             }}
           >
-            {case8}
+            {case8 == 0 && (
+              <img src={black} alt="empty" className="opacity-0" />
+            )}
+            {case8 == 1 && <img src={o} alt="o" />}
+            {case8 == 5 && <img src={x} alt="x" />}
           </button>
           <button
-            className="px-5 py-3"
+            className="m-1 px-3 py-3"
             onClick={() => {
               if (case9 == 0) {
                 setCase9(add);
@@ -176,7 +211,11 @@ function App() {
               }
             }}
           >
-            {case9}
+            {case9 == 0 && (
+              <img src={black} alt="empty" className="opacity-0" />
+            )}
+            {case9 == 1 && <img src={o} alt="o" />}
+            {case9 == 5 && <img src={x} alt="x" />}
           </button>
         </div>
       </div>
